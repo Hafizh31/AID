@@ -1,0 +1,20 @@
+{% extends 'analisis.html' %}
+
+{% block content %}
+    <center>
+    {% if searched %}
+      <h2 class="text-center" style="font-family: 'Raleway', sans-serif; margin-top: 130px;">Anda Mencari Penyakit {{searched}}</h2>
+      <h6  style="font-family: 'Raleway', sans-serif; ">
+        {% for penyakit in disease %}
+          <h5 style="font-family: 'Raleway', sans-serif; padding: 30px;"> Faktor Lingkungan yang Menjadi Penyebab: <br>{{penyakit.penyebab}} <br> <br>Pencegahan: <br>{{penyakit.pencegahan}}
+          </h5>
+      </h6>
+    {% endfor %}
+
+    {% else %}
+      <h2 class="text-center" style="font-family: 'Raleway', sans-serif; margin-top: 130px;">Tulis Sesuatu di Kolom Pencarian</h2>
+    {% endif %}
+
+
+    </center>
+{% endblock %}

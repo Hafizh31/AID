@@ -1,0 +1,18 @@
+#pos{
+  $position-values: (
+    0: 0,
+    20: 20%,
+    50: 50%,
+    100: 100%
+  );
+}
+
+#bg{
+  background: url("/static/images/post.png");
+  background-size: cover;
+}
+
+#btn{
+  height: 300px;
+  width: 300px;
+}
